@@ -54,8 +54,6 @@ function draw() {
   stones.display();
 
   ground1.display();
-
-  boy.display();
   
   mango1.display();
   mango2.display();
