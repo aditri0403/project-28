@@ -39,7 +39,7 @@ function setup() {
 	mango4 = new mango (615,545);
 	mango5 = new mango (625,545); 
 	
-	launcher1 = new launcher (stones, {x : 190, y : 610});
+	launcher1 = new launcher (stones.body, {x : 190, y : 610});
 	Engine.run(engine);
   
 }
@@ -72,7 +72,7 @@ function draw() {
  
 }
 function mouseDragged(){
-    Matter.Body.setPosition(stones, {x: mouseX , y: mouseY});
+    Matter.Body.setPosition(stones.body, {x: mouseX , y: mouseY});
    
 }
 function mouseReleased(){
@@ -83,7 +83,7 @@ function detectCollision(stone,mango){
   if(distance <= mango.r + stone.r)
   {
 	Matter.Body.setStatic(mango.body,false);
-    Matter.Body.setStatic(stone.body,false);
+  Matter.Body.setStatic(stone.body,false);
   }
 }
 function keyPressed(){

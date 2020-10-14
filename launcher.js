@@ -16,9 +16,12 @@ class launcher {
     fly(){
         this.launcher.BodyA = null;
     }
+   
     display(){
+        if(this.launcher.BodyA){
         var posA = this.launcher.BodyA.position;
         var posB = this.pointB;
         line(posA.x,posA.y,posB.x,posB.y);
+        }
     }
 };
