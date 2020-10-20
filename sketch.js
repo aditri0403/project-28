@@ -33,11 +33,11 @@ function setup() {
 	boy.addImage(boyImg);
 	boy.scale = 0.1;
 	
-	mango1 = new mango (610,550);
-	mango2 = new mango (620,550);
-	mango3 = new mango (625,550);
-	mango4 = new mango (615,545);
-	mango5 = new mango (625,545); 
+	mango1 = new mango (610,430);
+	mango2 = new mango (640,430);
+	mango3 = new mango (605,400);
+	mango4 = new mango (630,400);
+	mango5 = new mango (580,445); 
 	
 	launcher1 = new launcher (stones.body, {x : 190, y : 610});
 	Engine.run(engine);

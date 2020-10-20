@@ -1,7 +1,7 @@
 class launcher {
-    constructor(BodyA,pointB){
+    constructor(bodyA,pointB){
         var options = {
-            BodyA : BodyA,
+            bodyA : bodyA,
             pointB : pointB,
             length : 10,
             stiffness : 0.4
@@ -11,15 +11,15 @@ class launcher {
         World.add(world,this.launcher);
     }
     attach(body){
-        this.launcher.bodyA = body;
+        this.launcher.bodyA = bodyA;
     }
     fly(){
-        this.launcher.BodyA = null;
+        this.launcher.bodyA = null;
     }
    
     display(){
-        if(this.launcher.BodyA){
-        var posA = this.launcher.BodyA.position;
+        if(this.launcher.bodyA){
+        var posA = this.launcher.bodyA.position;
         var posB = this.pointB;
         line(posA.x,posA.y,posB.x,posB.y);
         }
