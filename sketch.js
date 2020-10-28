@@ -25,7 +25,7 @@ function setup() {
 
 	tree1 = new tree (600,470,200,200);
 
-	stones = new stone (120,510);
+	stones = new stone (120,510,5);
 	
 	ground1 = new ground (400,680,800,30);
 
@@ -33,11 +33,11 @@ function setup() {
 	boy.addImage(boyImg);
 	boy.scale = 0.1;
 	
-	mango1 = new mango (610,430);
-	mango2 = new mango (640,430);
-	mango3 = new mango (605,400);
-	mango4 = new mango (630,400);
-	mango5 = new mango (580,445); 
+	mango1 = new mango (610,430,20);
+	mango2 = new mango (640,430,20);
+	mango3 = new mango (605,400,20);
+	mango4 = new mango (630,400,20);
+	mango5 = new mango (580,445,20); 
 	
 	launcher1 = new launcher (stones.body, {x : 190, y : 610});
 	Engine.run(engine);
