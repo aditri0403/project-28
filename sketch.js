@@ -23,7 +23,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	tree1 = new tree (600,470,200,200);
+	tree1 = new tree (600,470,20,20);
 
 	stones = new stone (120,510,5);
 	
@@ -35,8 +35,8 @@ function setup() {
 	
 	mango1 = new mango (610,430,20);
 	mango2 = new mango (640,430,20);
-	mango3 = new mango (605,400,20);
-	mango4 = new mango (630,400,20);
+	mango3 = new mango (605,470,20);
+	mango4 = new mango (630,470,20);
 	mango5 = new mango (580,445,20); 
 	
 	launcher1 = new launcher (stones.body, {x : 190, y : 610});
